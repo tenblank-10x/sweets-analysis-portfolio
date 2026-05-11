@@ -1,0 +1,16 @@
+store_name,region,channel_type,store_id
+東京店1,東京都,STORE,1
+東京店2,東京都,STORE,2
+神奈川店,神奈川県,STORE,3
+静岡店,静岡県,STORE,4
+大阪店1,大阪府,STORE,5
+大阪店2,大阪府,STORE,6
+大阪店3,大阪府,STORE,7
+大阪店4,大阪府,STORE,8
+大阪店5,大阪府,STORE,9
+兵庫店1,兵庫県,STORE,10
+兵庫店2,兵庫県,STORE,11
+京都店,京都府,STORE,12
+楽天,EC,EC,13
+Amazon,EC,EC,14
+自社サイト,EC,EC,15
