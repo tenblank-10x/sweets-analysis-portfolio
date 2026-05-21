@@ -90,7 +90,7 @@ for i in range(10000):
     customers.append({
         "customer_id": i+1,
         "birth_date": datetime.strptime("1950-01-01", "%Y-%m-%d") + timedelta(days=random.randint(0, 20000)),
-        "region": random.choices(all_prefectures, weights=prefecture_weights, k=1)[0]
+        "customer_prefecture": random.choices(all_prefectures, weights=prefecture_weights, k=1)[0]
     })
 
 customers_df = pd.DataFrame(customers)
@@ -204,7 +204,7 @@ def make_candidate_df(customers_df, channel_type, store_region):
 
     if channel_type == "STORE":
         # 実店舗であれば特定の地域から選ぶ
-        return customers_df[customers_df["region"].isin(customer_regions[store_region])]
+        return customers_df[customers_df["customer_prefecture"].isin(customer_regions[store_region])]
     else:
         # ECは全国
         return customers_df
